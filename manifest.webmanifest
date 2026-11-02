@@ -1,7 +1,7 @@
 {
-  "name": "Uren & Loon",
-  "short_name": "Uren & Loon",
-  "description": "Houd Uw werkuren bij en zie ongeveer wat U gaat verdienen. Onafhankelijke app.",
+  "name": "Uren & Loon online",
+  "short_name": "Uren & Loon online",
+  "description": "Houd Uw werkuren bij en zie ongeveer wat U gaat verdienen. Onafhankelijke app, niet verbonden aan Albert Heijn of Ahold Delhaize.",
   "lang": "nl",
   "start_url": "./index.html",
   "scope": "./",
@@ -9,6 +9,9 @@
   "background_color": "#040A13",
   "theme_color": "#00A4E4",
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
