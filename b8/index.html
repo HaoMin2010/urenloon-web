@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#00A4E4">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Uren & Loon online: houd Uw werkuren bij en zie ongeveer wat U gaat verdienen. Onafhankelijke app, niet verbonden aan Albert Heijn of Ahold Delhaize.">
+  <meta name="referrer" content="no-referrer">
+  <title>Uren &amp; Loon online</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Uren & Loon online">
+  <meta name="application-name" content="Uren & Loon online">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/plus-jakarta-sans-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript><p style="padding:24px;font-family:sans-serif">Uren &amp; Loon online heeft JavaScript nodig om te werken.</p></noscript>
+
+  <!-- Laadscherm -->
+  <div id="splash" class="splash" role="status" aria-live="polite">
+    <div class="logo-mark big"><img src="icon.svg" alt="" width="96" height="96" decoding="async"></div>
+    <h1>Uren &amp; Loon <span class="online">online</span></h1>
+    <p>Uw uren en geschatte loon in één overzicht</p>
+    <p class="fine">Onafhankelijke app • niet verbonden aan Albert Heijn of Ahold Delhaize</p>
+  </div>
+
+  <!-- Inlogscherm: inloggen is verplicht -->
+  <main id="login" class="login hidden" aria-labelledby="login-title">
+    <div class="login-card">
+      <div class="logo-mark big"><img src="icon.svg" alt="" width="96" height="96" decoding="async"></div>
+      <h1 id="login-title">Uren &amp; Loon <span class="online">online</span></h1>
+      <p class="lead">Log in met Google om Uw diensten te bekijken en te beheren. Uw gegevens worden bewaard in Uw eigen Google Drive.</p>
+      <button id="btn-login" class="btn primary" type="button">Inloggen met Google</button>
+      <p id="login-msg" class="login-msg" role="alert"></p>
+      <div class="login-or"><span>of gebruik de app op Uw telefoon</span></div>
+      <button id="btn-android" class="btn android" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.6 9.5a5.6 5.6 0 0 0-11.2 0zM8.7 6.6a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zm6.6 0a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zM6.4 10.4v7.2c0 .8.6 1.4 1.4 1.4h.9v2.4a1.2 1.2 0 0 0 2.4 0V19h2.2v2.4a1.2 1.2 0 0 0 2.4 0V19h.9c.8 0 1.4-.6 1.4-1.4v-7.2zM3.8 10.4a1.2 1.2 0 0 0-1.2 1.2v4.8a1.2 1.2 0 0 0 2.4 0v-4.8a1.2 1.2 0 0 0-1.2-1.2zm16.4 0a1.2 1.2 0 0 0-1.2 1.2v4.8a1.2 1.2 0 0 0 2.4 0v-4.8a1.2 1.2 0 0 0-1.2-1.2z"/></svg>
+        Download Uren &amp; Loon voor Android
+      </button>
+      <ul class="login-points">
+        <li>Uw gegevens staan alleen in Uw eigen Google Drive. Alleen U kunt erbij.</li>
+        <li>Wij kunnen Uw gegevens en Uw andere bestanden niet inzien.</li>
+        <li>Alle bedragen zijn schattingen. Het echte loon staat op Uw loonstrook.</li>
+      </ul>
+      <p class="fine">Onafhankelijke app • niet verbonden aan, gemaakt met of goedgekeurd door Albert Heijn of Ahold Delhaize. <a href="privacy.html">Privacyverklaring</a></p>
+    </div>
+  </main>
+
+  <!-- Android-app downloaden: bereikbaar zonder in te loggen -->
+  <dialog id="install" class="install-dialog" aria-labelledby="inst-title">
+    <form method="dialog" class="inst-head">
+      <h2 id="inst-title">Uren &amp; Loon voor Android</h2>
+      <button class="inst-close" value="close" aria-label="Sluiten">&times;</button>
+    </form>
+    <div id="inst-step1">
+      <div class="inst-notice">
+        <h3>Belangrijk!</h3>
+        <ul>
+          <li>Gebruik de app uitsluitend voor het doel waarvoor hij bedoeld is: Uw uren bijhouden en Uw loon schatten.</li>
+          <li>Pas de app niet zelf aan. Komt U een probleem of fout tegen, stuur mij dan een DM via TikTok. Ik probeer het zo snel mogelijk op te lossen.</li>
+          <li>De app bevindt zich momenteel in de testfase. Daardoor kunnen bepaalde functies ontbreken of niet goed werken.</li>
+          <li>De app is uitsluitend beschikbaar voor Android.</li>
+        </ul>
+      </div>
+      <p class="inst-text">Voor feedback of het melden van problemen kunt U contact met mij opnemen via een DM op TikTok. Beschrijf daarbij zo duidelijk mogelijk wat er misgaat, zodat ik het probleem kan onderzoeken en waar mogelijk kan aanpassen.</p>
+      <p class="inst-version">Uren &amp; Loon versie: 1.5.0</p>
+      <label class="inst-agree"><input id="inst-agree" type="checkbox"><span>Ik heb de bovenstaande informatie gelezen en begrijp dat Uren &amp; Loon zich momenteel in de testfase bevindt en dat er fouten of ontbrekende functies kunnen voorkomen.</span></label>
+      <button id="inst-go" class="btn primary" type="button" disabled>Installeren!</button>
+    </div>
+    <div id="inst-step2" hidden></div>
+  </dialog>
+
+  <!-- De app -->
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div>
+                <h1 id="title" class="title"></h1>
+      </div>
+      <div class="topbar-right">
+        <button id="sync-pill" class="sync-pill" type="button" aria-live="polite"></button>
+        <div class="logo-mark small" aria-hidden="true"><img src="icon.svg" alt="" width="40" height="40" decoding="async"></div>
+      </div>
+    </header>
+    <div id="period-bar" class="period-bar" role="tablist" aria-label="Loonperiode"></div>
+    <main id="view" class="view"></main>
+
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <div class="nav-brand" aria-hidden="true"><div class="logo-mark small"><img src="icon.svg" alt="" width="40" height="40" decoding="async"></div><div><b>Uren &amp; Loon <span class="online">online</span></b><small>Uw uren en loon</small></div></div>
+      <div class="nav-pill" id="nav-pill">
+        <span class="nav-indicator" id="nav-ind"></span>
+        <button data-tab="dashboard" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg><span>Dashboard</span></button>
+        <button data-tab="shifts" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 8h14v10H5V10z"/></svg><span>Shifts</span></button>
+        <button data-tab="settings" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.8 7.8 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.3 7.3 0 0 0-1.7-1l-.4-2.6a.5.5 0 0 0-.5-.4h-4a.5.5 0 0 0-.5.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.5a.5.5 0 0 0 .1.6L4.6 11a7.8 7.8 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.6l2 3.5c.1.2.4.3.6.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.5.4h4c.3 0 .5-.2.5-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5a.5.5 0 0 0-.1-.6L19.4 13zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg><span>Instellingen</span></button>
+      </div>
+      <button id="fab" class="fab" type="button" aria-label="Nieuwe dienst"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></button>
+      <p class="nav-foot">Onafhankelijke app • niet verbonden aan Albert Heijn of Ahold Delhaize</p>
+    </nav>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="snackbar" class="snackbar" role="status" aria-live="polite"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
