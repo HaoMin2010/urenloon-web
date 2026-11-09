@@ -103,7 +103,7 @@ ${C}\r
         <button id="inst-dl" class="btn primary" type="button" disabled>Download Uren &amp; Loon voor Android</button>
         <div id="inst-prog" class="inst-prog" hidden><div class="inst-bar"><i id="inst-fill"></i></div><p id="inst-prog-text" class="inst-meta"></p></div>
         <p id="inst-err" class="login-msg" role="alert"></p>
-        <p class="inst-meta">Android 10 of nieuwer &bull; ongeveer 75 MB</p>
+        <p class="inst-meta">Android 10 of nieuwer &bull; ongeveer 110 MB</p>
         <ol class="inst-steps">
           <li>Open het gedownloade bestand op Uw telefoon.</li>
           <li>Staat installeren van onbekende apps nog niet aan, sta het dan toe voor de app waarmee U het bestand opent (bijvoorbeeld Chrome of Bestanden).</li>
